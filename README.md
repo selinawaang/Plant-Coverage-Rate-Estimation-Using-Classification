@@ -34,34 +34,29 @@ The final SVM classification model has an accuracy of 0.927. The estimated plant
 **image_preprocessing.py:**\
 preprocesses images by 1. centering the RGB values 2. reducing the size of image
   
-  input: 
+input: 
 - folder containing unprocessed images
 - constant k between 0 and 1, which is the proportion used to reduce the image
   
-  output: 
-  
+output: 
 - processed images saved to foler "Provessed_Images"
 
 **model_training.py:**\
 trains a classification model
   
-  input:
-  
+input:
 - screenshots and soil and trees from images used as training data
     
-  output:
-  
+output:
 - classification model saved as "classification_model.sav"
 
 **tree_coverage.py:**\
 performs classification and calculates plant coverage rate
   
-  input: 
-  
+input: 
 - folder containing preprocessed images
   
-  output:
-  
+output:
 - "Results" folder containing:
   - plant coverage rates (in csv and excel)
   - visualization of images after classification
